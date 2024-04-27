@@ -41,12 +41,54 @@
             font-weight: 500;
             letter-spacing: 1px;
             height: 10px;
+            transition: 0.3s;
         }
         a#discord:hover{
             color: rgb(103, 103, 103);
-            transition: 0.2s;
         }
         
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0px 70px;
+            height: 64px;
+            padding: 8px 0px;
+        }
+        .navbar {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0px 70px;;
+        }
+        .navitem {
+            margin: 8px;
+            padding: 3px;
+            font-size: 14px;
+            font-weight: 550;
+            letter-spacing: 1px;
+        }
+        .navitem a {
+            text-decoration: none;
+            color: #1a232f;
+            transition: 0.3s;
+        }
+        .navitem a:hover {
+            color: #3597ff;
+        }
+        .register-button {
+            font-size: 14px;
+            padding: 15px 24px;
+            color: white;
+            background-color: #3597ff;
+            border: none;
+            border-radius: 5px;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+        .openlab-logo {
+            height: fit-content;
+        }
     </style>
     
 </head>
@@ -57,6 +99,24 @@
         <a href="https://discord.com/invite/fjRmVdzXcU" target="_blank" id="discord">OPENLAB COMMUNITY <img src="images/Discord Icon.png" alt="" height="16px" width="20px"></a>
     </div>
 </header>
+
+<nav>
+    <div class="nav-content">
+        <a href="" class="openlab-logo">
+            <img src="https://openlab.sk/wp-content/themes/wp-bootstrap-starter/assets/images/openlab-logo.svg" alt="">
+        </a>
+        <ul class="navbar">
+            <li class="navitem"><a href="">Úvod</a></li>
+            <li class="navitem"><a href="">OpenLab</a></li>
+            <li class="navitem"><a href="">Online hodiny</a></li>
+            <li class="navitem"><a href="">Pre učiteľov</a></li>
+            <li class="navitem"><a href="">Partneri</a></li>
+            <li class="navitem"><a href="">Moderná škola</a></li>
+            <li class="navitem"><a href="">Časté otázky</a></li>
+        </ul>
+        <button class="register-button">Pridajte sa k nám</button>
+    </div>
+</nav>
     
 </body>
 </html>
