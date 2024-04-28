@@ -9,6 +9,11 @@
         *{
             font-family: sans-serif;
         }
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
         header {
             margin-left: 40px;
             margin-right: 40px;
@@ -20,14 +25,14 @@
             display: flex;
             align-items: center;
         }
-        .header-content p{
+        .header-content p {
             font-size: 14px;
             font-weight: 200;
         }
-        #discord{
+        #discord {
             margin-left: 40px;
         }
-        a#discord{
+        a#discord {
             text-decoration: none;
             display: flex;
             justify-content: center;
@@ -43,7 +48,7 @@
             height: 10px;
             transition: 0.3s;
         }
-        a#discord:hover{
+        a#discord:hover {
             color: rgb(103, 103, 103);
         }
         
@@ -89,6 +94,41 @@
         .openlab-logo {
             height: fit-content;
         }
+
+        #uvod {
+            display: flex;
+            background-color: #3597ff;
+            align-items: center;
+            justify-content: space-around;
+            margin: 0 0 40px 0;
+        }
+        .uvod-nadpis {
+            width: 526px;
+            margin: 0 0 60px 0;
+        }
+        .uvod-nadpis h1 {
+            font-size: 40px;
+            font-weight: 350;
+            color: white;
+        }
+        .uvod-nadpis p {
+            letter-spacing: 0.5px;
+            color: white;
+        }
+        .uvod-obrazok {
+            margin-bottom: -4px;
+            margin-right: 10px;
+        }
+        .relative {
+            position: relative;
+        }
+        .relative img {
+            position: absolute;
+            right: -300px;
+            top: -30px;
+        }
+        
+
     </style>
     
 </head>
@@ -117,6 +157,22 @@
         <button class="register-button">Pridajte sa k nám</button>
     </div>
 </nav>
+
+<section id="uvod">
+    <div class="uvod-nadpis">
+        <h1>Inštitút stredoškolského odborného vzdelávania <br> 
+            <strong>zameraný na IT & AI</strong></h1>
+        <p>
+            Realizujeme odborné vzdelávanie zamerané na IT pre štátne školy ako nový štandard formálneho vzdelávania
+        </p>
+    </div>
+    <div class="uvod-obrazok">
+        <img src="https://openlab.sk/wp-content/themes/wp-bootstrap-starter/assets/images/main-home.png" height="418px" width="543px" alt="">
+    </div>
+    <div class="relative">
+        <img src="https://openlab.sk/wp-content/themes/wp-bootstrap-starter/assets/images/o_letter.png" alt="" height="482">
+    </div>
+</section>
     
 </body>
 </html>
